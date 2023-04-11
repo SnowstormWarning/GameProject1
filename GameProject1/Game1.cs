@@ -130,7 +130,6 @@ namespace GameProject1
                         diff.Normalize();
                         diff *= Ring.Radius;
                         Ball.Velocity += ForceMod * diff;
-                        DisplayDebug = ""+Ball.Velocity.X+" , "+Ball.Velocity.Y+ "RING RAD: "+Ring.Radius;
                         Ball.Update(gameTime);
                     }
                     break;
@@ -184,7 +183,6 @@ namespace GameProject1
                 Ring.Draw(gameTime, _spriteBatch);
 
             }
-            _spriteBatch.DrawString(Font, DisplayDebug, Vector2.One, Color.Red);
             _spriteBatch.End();
             base.Draw(gameTime);
         }

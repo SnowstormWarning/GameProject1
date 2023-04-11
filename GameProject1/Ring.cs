@@ -36,7 +36,6 @@ namespace GameProject1
             _ballSprite.Scale = Math.Max(Math.Min(distanceFromBallCenter / 16,MaxRadius),1f);
             _ballSprite.Position = Ball.Center;
             _ballSprite.DrawOffset = new Vector2(-8f,-8f) * (_ballSprite.Scale);
-            spriteBatch.DrawString(Game1.Font, ""+(_ballSprite.Position.X)+", "+ (_ballSprite.Position.Y), Vector2.One, Color.White);
             _ballSprite.Draw(gameTime, spriteBatch,Color.White);
         }
     
